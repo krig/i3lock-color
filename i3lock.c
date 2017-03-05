@@ -1196,6 +1196,7 @@ int main(int argc, char *argv[]) {
     }
 
     xcb_pixmap_t blur_pixmap;
+    blur_pixmap = 0;
     if (blur) {
         if(!img) {
             xcb_visualtype_t *vistype = get_root_visual_type(screen);
